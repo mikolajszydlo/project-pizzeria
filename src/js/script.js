@@ -60,7 +60,7 @@
       thisProduct.data = data;
 
       thisProduct.renderInMenu();
-      console.log('new Product', thisProduct);
+      thisProduct.initAccordion();
     }
 
     renderInMenu() {
@@ -73,18 +73,35 @@
       menuContainer.appendChild(thisProduct.element);
 
     }
+
+    initAccordion() {
+      const thisProduct = this;
+  
+      const clickableTrigger = thisProduct.element.querySelector(select.menuProduct.clickable);
+
+      clickableTrigger.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        const activeProducts = document.querySelector(select.all.menuProductsActive);
+        console.log(classNames.menuProduct.wrapperActive);
+        console.log(activeProducts);
+        console.log(thisProduct.element);
+        if (activeProducts && activeProducts != thisProduct.element) {
+          activeProducts.classList.remove(classNames.menuProduct.wrapperActive);
+        }
+  
+        thisProduct.element.classList.toggle(classNames.menuProduct.wrapperActive);
+      });
+    }
   }
 
   const app = {
     initMenu: function() {
       const thisApp = this;
-      console.log('thisApp.data', thisApp.data);
 
       for(let productData in thisApp.data.products){
         new Product(productData, thisApp.data.products[productData]);
       }
-      const testProduct = new Product();
-      console.log('testProduct:', testProduct);
     },
     initData: function() {
       const thisApp = this;
