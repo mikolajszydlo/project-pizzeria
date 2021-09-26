@@ -1,5 +1,4 @@
 /* global Handlebars, utils, dataSource */ // eslint-disable-line no-unused-vars
-
 {
   'use strict';
 
@@ -40,7 +39,7 @@
     },
   };
 
-  const settings = {
+  const settings = { // eslint-disable-line no-unused-vars
     amountWidget: {
       defaultValue: 1,
       defaultMin: 1,
@@ -83,9 +82,7 @@
         event.preventDefault();
         
         const activeProducts = document.querySelector(select.all.menuProductsActive);
-        console.log(classNames.menuProduct.wrapperActive);
-        console.log(activeProducts);
-        console.log(thisProduct.element);
+
         if (activeProducts && activeProducts != thisProduct.element) {
           activeProducts.classList.remove(classNames.menuProduct.wrapperActive);
         }
@@ -110,11 +107,6 @@
     },
     init: function(){
       const thisApp = this;
-      console.log('*** App starting ***');
-      console.log('thisApp:', thisApp);
-      console.log('classNames:', classNames);
-      console.log('settings:', settings);
-      console.log('templates:', templates);
 
       thisApp.initData();
       thisApp.initMenu();
