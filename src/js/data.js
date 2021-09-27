@@ -37,14 +37,14 @@ dataSource.products = {
     description: 'The true taste of Italy &ndash; homemade pizza as prepared by our grandmothers in old-fashoned brick ovens. Choose your favorite topping and enjoy your comfort food! All ingredients come straight from eco-friendly, trusted farms in the Italian countryside.',
     images: [
       '<img class="active" src="images/pizza/crust.svg">',
-      '<img class="active sauce-tomato" src="images/pizza/tomato-sauce.svg">',
-      '<img class="active sauce-cream" src="images/pizza/sour-cream.svg">',
-      '<img class="active toppings-salami" src="images/pizza/salami.svg">',
-      '<img class="active toppings-olives" src="images/pizza/olives.svg">',
-      '<img class="active toppings-redPeppers" src="images/pizza/red-peppers.svg">',
-      '<img class="active toppings-greenPeppers" src="images/pizza/green-peppers.svg">',
-      '<img class="active toppings-mushrooms" src="images/pizza/mushrooms.svg">',
-      '<img class="active toppings-basil" src="images/pizza/basil.svg">',
+      '<img class="sauce-tomato" src="images/pizza/tomato-sauce.svg">',
+      '<img class="sauce-cream" src="images/pizza/sour-cream.svg">',
+      '<img class="toppings-salami" src="images/pizza/salami.svg">',
+      '<img class="toppings-olives" src="images/pizza/olives.svg">',
+      '<img class="toppings-redPeppers" src="images/pizza/red-peppers.svg">',
+      '<img class="toppings-greenPeppers" src="images/pizza/green-peppers.svg">',
+      '<img class="toppings-mushrooms" src="images/pizza/mushrooms.svg">',
+      '<img class="toppings-basil" src="images/pizza/basil.svg">',
     ],
     params: {
       sauce: {
