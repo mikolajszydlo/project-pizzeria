@@ -37,7 +37,7 @@ class Product{
     thisProduct.cartButton = thisProduct.element.querySelector(select.menuProduct.cartButton);
     thisProduct.priceElem = thisProduct.element.querySelector(select.menuProduct.priceElem);
     thisProduct.imageWrapper = thisProduct.element.querySelector(select.menuProduct.imageWrapper);
-    thisProduct.AmountWidgetElem = thisProduct.element.querySelector(select.menuProduct.amountWidget);
+    thisProduct.amountWidgetElem = thisProduct.element.querySelector(select.menuProduct.amountWidget);
   }
 
   initAccordion() {
@@ -115,9 +115,10 @@ class Product{
 
   initAmountWidget() {
     const thisProduct = this;
-
-    thisProduct.amountWidget = new AmountWidget(thisProduct.AmountWidgetElem);
-    thisProduct.AmountWidgetElem.addEventListener('updated', function(){
+    console.log(thisProduct.amountWidgetElem);
+    thisProduct.amountWidget = new AmountWidget(thisProduct.amountWidgetElem);
+    
+    thisProduct.amountWidgetElem.addEventListener('updated', function(){
       thisProduct.processOrder();
     });
   }

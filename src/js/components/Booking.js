@@ -23,7 +23,7 @@ class Booking {
 
   initWidgets(){
     const thisBooking = this;
-
+    console.log(thisBooking.dom.hoursAmount);
     thisBooking.hoursAmountWidget = new AmountWidget(thisBooking.dom.hoursAmount);
     thisBooking.peopleAmountWidget = new AmountWidget(thisBooking.dom.peopleAmount);
   }
