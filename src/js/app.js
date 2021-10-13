@@ -55,8 +55,9 @@ const app = {
   initMenu: function() {
     const thisApp = this;
 
+    thisApp.product = {};
     for(let productData in thisApp.data.products){
-      new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
+      thisApp.product[productData] = new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
     }
   },
 

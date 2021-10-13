@@ -20,8 +20,8 @@ class Product{
 
   renderInMenu() {
     const thisProduct = this;
-
     const generatedHTML = templates.menuProduct(thisProduct.data);
+
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
 
     const menuContainer = document.querySelector(select.containerOf.menu);
@@ -115,7 +115,7 @@ class Product{
 
   initAmountWidget() {
     const thisProduct = this;
-    console.log(thisProduct.amountWidgetElem);
+
     thisProduct.amountWidget = new AmountWidget(thisProduct.amountWidgetElem);
     
     thisProduct.amountWidgetElem.addEventListener('updated', function(){

@@ -4,7 +4,6 @@ class BaseWidget {
 
     thisWidget.dom = {};
     thisWidget.dom.wrapper = wrapperElement;
-
     thisWidget.correctValue = initialValue;
   }
 
@@ -37,7 +36,7 @@ class BaseWidget {
     }
     thisWidget.renderValue();
   }
-  
+
   parseValue(value){
     return parseInt(value);
   }
