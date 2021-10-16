@@ -171,10 +171,25 @@
         background: $color-dark;
         opacity: 0.4;
       }
+    }
 
+    &.selected {
+      color: darken($color-success, 40%);
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: $color-success;
+        opacity: 0.4;
+        border: 5px solid darken($color-success, 40%);
+      }
     }
   }
-
+  
   [data-table="1"] {
     left: 40px;
     top: 40px;
