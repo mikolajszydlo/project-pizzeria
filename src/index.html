@@ -9,6 +9,8 @@
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="./vendor/range-slider.css">
+  <link rel="stylesheet" href="./vendor/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -21,6 +23,7 @@
           <h2 class="logo__subtitle">the best homemade Italian food</h2>
         </div>
         <div class="main-nav">
+          <a href="#home">Home</a>
           <a href="#order">Order</a>
           <a href="#booking">Booking</a>
         </div>
@@ -62,6 +65,69 @@
   </header>
 
   <div id="pages">
+    <section id="home">
+      <div class="home container">
+        <div class="box-links">
+          <div class="box__order">
+            <h1>Order online</h1>
+            <span>Delicious food delivered to your door</span>
+          </div>
+          <div class="box__booking">
+            <h1>Book a table</h1>
+            <span>Reserve table for great food experience</span>
+          </div>
+          <div class="box__info">
+            <h1>Opening hours:</h1>
+            <p>Tue-Sun, 12PM - 12 AM</p>
+          </div>
+        </div>
+        <div class="owl-carousel">
+          <div class="carousel-cell">
+            <img src="./images/assets/pizza-3.jpg" alt="People sitting in a restaurant">
+            <div class="carousel-text">
+              <h3>Great venue</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus mollitia quos optio repellendus nobis minima praesentium in enim magni!</p>
+              <p class="customer">- Margaret Osborne</p>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/assets/pizza-3.jpg" alt="People sitting in a restaurant">
+            <div class="carousel-text">
+              <h3>Great venue</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus mollitia quos optio repellendus nobis minima praesentium in enim magni!</p>
+              <p class="customer">- Margaret Osborne</p>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/assets/pizza-3.jpg" alt="People sitting in a restaurant">
+            <div class="carousel-text">
+              <h3>Great venue</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus mollitia quos optio repellendus nobis minima praesentium in enim magni!</p>
+              <p class="customer">- Margaret Osborne</p>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <img src="./images/assets/pizza-3.jpg" alt="People sitting in a restaurant">
+            <div class="carousel-text">
+              <h3>Great venue</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus mollitia quos optio repellendus nobis minima praesentium in enim magni!</p>
+              <p class="customer">- Margaret Osborne</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery__item"><i class="fas fa-heart"></i><i class="fab fa-jedi-order"></i></div>
+          <div class="gallery__item"><i class="fas fa-heart"></i><i class="fab fa-jedi-order"></i></div>
+          <div class="gallery__item"><i class="fas fa-heart"></i><i class="fab fa-jedi-order"></i></div>
+          <div class="gallery__item"><i class="fas fa-heart"></i><i class="fab fa-jedi-order"></i></div>
+          <div class="gallery__item"><i class="fas fa-heart"></i><i class="fab fa-jedi-order"></i></div>
+          <div class="gallery__item"><i class="fas fa-heart"></i><i class="fab fa-jedi-order"></i></div>
+        </div>
+        <div class="social-media">
+          <a href="#">View more on Instagram</a>
+        </div>
+      </div>
+    </section>
     <section id="order">
       <div id="product-list" class="product-list container"></div>
     </section>
@@ -243,9 +309,12 @@
     </div>
   </script>
 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="./vendor/range-slider.js" type="module"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
   <script src="./js/app.js" type="module"></script>
 </body>
 </html>

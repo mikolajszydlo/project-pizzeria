@@ -111,3 +111,18 @@ const app = {
 
 app.init();
 
+// var elem = document.querySelector('.main-carousel');
+// var flkty = new Flickity( elem, { // eslint-disable-line no-unused-vars, no-undef
+//   prevNextButtons: false,
+//   autoPlay: true,
+// });
+
+$(document).ready(function(){ // eslint-disable-line no-undef
+  $('.owl-carousel').owlCarousel({ // eslint-disable-line no-undef
+    items: 1,
+    loop:true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause:true,
+  });
+});
