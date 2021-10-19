@@ -38,6 +38,7 @@
       transition-duration: 0.5s;
       transform: translateY(-25px);
     }
+
     span {
       z-index: 0;
       transition-duration: 0.5s;
@@ -140,6 +141,7 @@
         top: 50%;
         transform: translate(-120%, -50%);
       }
+      
       &:last-of-type {
         right: 50%;
         top: 50%;
